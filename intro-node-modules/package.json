@@ -1,0 +1,17 @@
+{
+  "name": "intro-node-modules",
+  "version": "1.0.0",
+  "description": "This is an easy intro to some node modules.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "something": " echo 'Hello from the scripts' ",
+    "start": "node index.js",
+    "dev": "node --watch --env-file=.env index.js"
+  },
+  "author": "Stephan",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}

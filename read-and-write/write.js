@@ -29,10 +29,12 @@ const createFileWithMessage = async (message) => {
   try {
     // await fs.writeFile(filepath, message);
     await fs.appendFile(filepath, message + '\n');
-    return filename;
+    return filepath;
   } catch (error) {
     console.log(error);
   }
 };
 
-createFileWithMessage(argument);
+export default createFileWithMessage;
+
+// createFileWithMessage(argument);

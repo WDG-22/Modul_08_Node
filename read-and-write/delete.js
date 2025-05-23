@@ -7,8 +7,10 @@ const deleteFileByName = async (filepath) => {
     await fs.access(filepath);
     await fs.unlink(filepath);
   } catch {
-    console.log(`No file exists on: ${filepath}`);
+    throw new Error(`No file exists on: ${filepath}`);
   }
 };
 
-deleteFileByName(filepath);
+// deleteFileByName(filepath);
+
+export default deleteFileByName;
